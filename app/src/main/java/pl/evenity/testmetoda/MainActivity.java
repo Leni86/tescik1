@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends test {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         xxx.getSample();
         if (TextUtils.isEmpty(xxx.liczba1)){
             Toast.makeText(this, "Wpisz jakąś liczbę", Toast.LENGTH_SHORT).show();
-            return;
         } else { xxx.setText("Pokazuje wpisaną liczbę: "+xxx.liczba1);
         }
     }
